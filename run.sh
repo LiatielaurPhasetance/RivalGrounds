@@ -32,6 +32,11 @@ run_executable() {
 }
 
 # Main script
+
+if [ ! -d "${BUILD_DIR}" ]; then
+    mkdir "${BUILD_DIR}"
+fi
+
 cd "$BUILD_DIR" || { echo "Failed to change directory to $BUILD_DIR"; exit 1; }
 
 if [ ! -f "$EXECUTABLE" ]; then

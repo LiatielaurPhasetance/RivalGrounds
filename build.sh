@@ -8,6 +8,9 @@ BUILD_DIR="$SCRIPT_DIR/build"
 
 # Function to initialize submodules
 init_submodules() {
+    if [ ! -d "build" ]; then
+        mkdir build
+    fi
     if [ ! -d "build/vendor" ]; then
         mkdir build/vendor
         echo "Adding submodules..."
