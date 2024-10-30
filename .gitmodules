@@ -1,0 +1,6 @@
+[submodule "build/vendor/glad"]
+	path = build/vendor/glad
+	url = https://github.com/Dav1dde/glad.git
+[submodule "build/vendor/CrossWindow"]
+	path = build/vendor/CrossWindow
+	url = https://github.com/alaingalvan/crosswindow.git
